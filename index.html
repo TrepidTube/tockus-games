@@ -1,0 +1,360 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Tockus Games — Estudio independiente de videojuegos</title>
+<meta name="description" content="Tockus Games es un estudio independiente de tres personas. Creadores de Bloppy Fish, un arcade de un solo toque para Android.">
+<meta name="theme-color" content="#0B0D12">
+<meta property="og:title" content="Tockus Games — Estudio independiente de videojuegos">
+<meta property="og:description" content="Tres personas haciendo juegos. Creadores de Bloppy Fish.">
+<meta property="og:image" content="assets/img/logo.png">
+<meta property="og:type" content="website">
+<link rel="icon" href="assets/img/logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+
+<a class="skip" href="#main">Saltar al contenido</a>
+
+<canvas id="stars" aria-hidden="true"></canvas>
+<div class="scanlines" aria-hidden="true"></div>
+
+<header class="nav" id="nav">
+  <div class="wrap nav__inner">
+    <a class="nav__brand" href="#top">
+      <img src="assets/img/logo.png" alt="Tockus Games" width="200" height="44">
+    </a>
+    <button class="nav__toggle" id="navToggle" aria-expanded="false" aria-controls="navMenu" aria-label="Abrir menú">
+      <span></span><span></span><span></span>
+    </button>
+    <nav class="nav__menu" id="navMenu" aria-label="Principal">
+      <a href="#juegos">Juegos</a>
+      <a href="#equipo">Equipo</a>
+      <a href="#proceso">Proceso</a>
+      <a href="#novedades">Novedades</a>
+      <a class="btn btn--sm btn--primary" href="#contacto">Contacto</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+
+  <!-- ============ HERO ============ -->
+  <section class="hero" id="top">
+    <div class="wrap hero__inner">
+      <div class="hero__copy">
+        <p class="eyebrow" data-reveal>▸ Estudio independiente · 3 personas</p>
+        <h1 class="hero__title" data-reveal>
+          Hacemos<br>
+          juegos con<br>
+          <span class="hl">alma</span> de <span class="px">8 bits</span>.
+        </h1>
+        <p class="hero__lead" data-reveal>
+          Somos <strong>Tockus&nbsp;Games</strong>, un estudio pequeño que diseña, programa y
+          dibuja sus propios juegos. Nuestro primer título,
+          <strong>Bloppy&nbsp;Fish</strong>, ya está en Google&nbsp;Play.
+        </p>
+        <div class="hero__cta" data-reveal>
+          <a class="btn btn--primary" href="https://play.google.com/store/apps/details?id=com.tockusgames.bloppyfish" target="_blank" rel="noopener">Jugar Bloppy Fish</a>
+          <a class="btn btn--ghost" href="#juegos">Ver los proyectos</a>
+        </div>
+        <ul class="hero__meta" data-reveal>
+          <li><span>Android</span></li>
+          <li><span>Arcade</span></li>
+          <li><span>Para todos</span></li>
+        </ul>
+      </div>
+
+      <div class="hero__art" data-reveal>
+        <div class="screen">
+          <div class="screen__bar"><i></i><i></i><i></i><span>tockus_demo.exe</span></div>
+          <div class="screen__view">
+            <img class="float" src="assets/img/logo.png" alt="Logotipo de Tockus Games: un tucán en pixel art">
+            <div class="cloud c1"></div>
+            <div class="cloud c2"></div>
+            <div class="cloud c3"></div>
+            <div class="ground"></div>
+          </div>
+          <div class="screen__hud">
+            <span class="blink">PRESS START</span>
+            <span>HI-SCORE 999999</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ BANDA DE DATOS ============ -->
+  <section class="facts">
+    <div class="wrap facts__grid">
+      <div class="fact" data-reveal><b>01</b><span>juego publicado</span></div>
+      <div class="fact" data-reveal><b>03</b><span>personas en el equipo</span></div>
+      <div class="fact" data-reveal><b>∞</b><span>prototipos en el cajón</span></div>
+      <div class="fact" data-reveal><b>E</b><span>apto para todo público</span></div>
+    </div>
+  </section>
+
+  <!-- ============ JUEGOS ============ -->
+  <section class="section" id="juegos">
+    <div class="wrap">
+      <header class="section__head">
+        <h2 class="section__title" data-reveal>Nuestros juegos</h2>
+        <p class="section__sub" data-reveal>Poco, pero nuestro. Cada línea de código y cada pixel salieron de este equipo.</p>
+      </header>
+
+      <!-- ---- juego destacado: Bloppy Fish ---- -->
+      <article class="feature" data-reveal>
+        <div class="feature__shots">
+          <img class="shot shot--a"
+               src="assets/img/bloppy-1.webp"
+               alt="Pantalla de título de Bloppy Fish" loading="lazy">
+          <img class="shot shot--b"
+               src="assets/img/bloppy-2.webp"
+               alt="Tutorial de Bloppy Fish" loading="lazy">
+          <img class="shot shot--c"
+               src="assets/img/bloppy-3.webp"
+               alt="Partida de Bloppy Fish esquivando obstáculos" loading="lazy">
+        </div>
+
+        <div class="feature__body">
+          <div class="feature__head">
+            <img class="feature__icon"
+                 src="assets/img/bloppy-icon.webp"
+                 alt="Icono de Bloppy Fish" width="72" height="72" loading="lazy">
+            <div>
+              <h3>Bloppy Fish</h3>
+              <span class="tag tag--on">Publicado</span>
+            </div>
+          </div>
+
+          <p class="feature__pitch">
+            🐡 Bloppy no puede quedarse quieto. Toca la pantalla para impulsar a este pez globo,
+            esquiva todo lo que se le cruce y aguanta lo máximo posible.
+            Fácil de aprender, difícil de dominar.
+          </p>
+
+          <ul class="feature__points">
+            <li>Un solo toque: todo el juego cabe en un dedo.</li>
+            <li>Partidas cortas para cualquier momento muerto.</li>
+            <li>Dificultad progresiva y récord propio que batir.</li>
+            <li>Diseño colorido y un protagonista difícil de odiar.</li>
+          </ul>
+
+          <ul class="feature__meta">
+            <li>Arcade</li><li>Android</li><li>Clasificación E</li><li>Actualizado 01 OCT 2026</li>
+          </ul>
+
+          <div class="feature__cta">
+            <a class="btn btn--primary" href="https://play.google.com/store/apps/details?id=com.tockusgames.bloppyfish" target="_blank" rel="noopener">Descargar en Google Play</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- ---- otros proyectos ---- -->
+      <div class="games">
+
+        <article class="game" data-reveal>
+          <div class="game__art">
+            <svg viewBox="0 0 64 40" aria-hidden="true" shape-rendering="crispEdges">
+              <rect width="64" height="40" fill="#11151F"/>
+              <rect x="4" y="4" width="56" height="32" fill="none" stroke="#2A3550" stroke-width="1"/>
+              <rect x="10" y="10" width="8" height="8" fill="#1D5FD1"/>
+              <rect x="24" y="18" width="8" height="8" fill="#FF7A18"/>
+              <rect x="40" y="12" width="8" height="8" fill="#2A3550"/>
+              <rect x="40" y="24" width="8" height="4" fill="#2A3550"/>
+              <rect x="10" y="30" width="20" height="2" fill="#5BE0FF"/>
+            </svg>
+          </div>
+          <div class="game__body">
+            <!-- TODO: cambia el nombre y la descripción por los de tu demo real -->
+            <div class="game__top"><h3>[Nombre de la demo]</h3><span class="tag tag--wip">Demo técnica</span></div>
+            <p>Una prueba de concepto interna: sirve para validar sistemas y herramientas, no para jugar todavía.
+               Si se sostiene en pie, se convierte en el siguiente proyecto.</p>
+            <ul class="game__meta"><li>Prototipo</li><li>Interno</li></ul>
+          </div>
+        </article>
+
+        <article class="game game--soon" data-reveal>
+          <div class="game__art">
+            <svg viewBox="0 0 64 40" aria-hidden="true" shape-rendering="crispEdges">
+              <rect width="64" height="40" fill="#0E1326"/>
+              <rect x="8" y="8" width="2" height="2" fill="#FFF"/><rect x="50" y="12" width="2" height="2" fill="#5BE0FF"/>
+              <rect x="20" y="30" width="2" height="2" fill="#FF7A18"/>
+              <rect x="26" y="16" width="4" height="4" fill="#FF7A18"/>
+              <rect x="34" y="16" width="4" height="4" fill="#FF7A18"/>
+              <rect x="30" y="22" width="4" height="4" fill="#FF7A18"/>
+              <rect x="30" y="10" width="4" height="4" fill="#FF7A18"/>
+            </svg>
+          </div>
+          <div class="game__body">
+            <div class="game__top"><h3>Lo que viene</h3><span class="tag tag--jam">Próximamente</span></div>
+            <p>Estamos cocinando el siguiente juego. Escríbenos si quieres enterarte antes que nadie
+               o probarlo cuando esté listo.</p>
+            <div class="game__links"><a href="#contacto" class="link">Avísame ↗</a></div>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ EQUIPO ============ -->
+  <section class="section section--alt" id="equipo">
+    <div class="wrap">
+      <header class="section__head">
+        <h2 class="section__title" data-reveal>El equipo</h2>
+        <p class="section__sub" data-reveal>Tres personas detrás de Tockus Games.</p>
+      </header>
+
+      <!-- Para usar fotos reales: sustituye el <svg> por
+           <img src="assets/img/dev-1.png" alt="Nombre"> y listo. -->
+      <div class="team">
+
+        <article class="member" data-reveal>
+          <div class="member__photo">
+            <svg viewBox="0 0 32 32" aria-hidden="true" shape-rendering="crispEdges">
+              <rect width="32" height="32" fill="#1D5FD1"/>
+              <rect x="6" y="10" width="20" height="14" fill="#F2C6A0"/>
+              <rect x="6" y="6" width="20" height="5" fill="#0B0D12"/>
+              <rect x="11" y="15" width="3" height="3" fill="#0B0D12"/><rect x="18" y="15" width="3" height="3" fill="#0B0D12"/>
+              <rect x="13" y="20" width="6" height="2" fill="#C97B5A"/>
+              <rect x="4" y="24" width="24" height="8" fill="#FF7A18"/>
+            </svg>
+          </div>
+          <h3>Miguel Navarrete</h3>
+        </article>
+
+        <article class="member" data-reveal>
+          <div class="member__photo">
+            <svg viewBox="0 0 32 32" aria-hidden="true" shape-rendering="crispEdges">
+              <rect width="32" height="32" fill="#FF7A18"/>
+              <rect x="6" y="10" width="20" height="14" fill="#E0A878"/>
+              <rect x="5" y="5" width="22" height="6" fill="#3A2415"/>
+              <rect x="11" y="15" width="3" height="3" fill="#0B0D12"/><rect x="18" y="15" width="3" height="3" fill="#0B0D12"/>
+              <rect x="13" y="20" width="6" height="2" fill="#A85D3C"/>
+              <rect x="4" y="24" width="24" height="8" fill="#1D5FD1"/>
+            </svg>
+          </div>
+          <h3>Miguel Martínez</h3>
+        </article>
+
+        <article class="member" data-reveal>
+          <div class="member__photo">
+            <svg viewBox="0 0 32 32" aria-hidden="true" shape-rendering="crispEdges">
+              <rect width="32" height="32" fill="#5BE0FF"/>
+              <rect x="6" y="10" width="20" height="14" fill="#C98E63"/>
+              <rect x="6" y="5" width="20" height="6" fill="#1A1008"/>
+              <rect x="4" y="9" width="4" height="8" fill="#1A1008"/><rect x="24" y="9" width="4" height="8" fill="#1A1008"/>
+              <rect x="11" y="15" width="3" height="3" fill="#0B0D12"/><rect x="18" y="15" width="3" height="3" fill="#0B0D12"/>
+              <rect x="13" y="20" width="6" height="2" fill="#8C5A3C"/>
+              <rect x="4" y="24" width="24" height="8" fill="#FF7A18"/>
+            </svg>
+          </div>
+          <h3>David Navarrete</h3>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ MARQUEE ============ -->
+  <div class="marquee" aria-hidden="true">
+    <div class="marquee__track">
+      <span>TOCKUS GAMES</span><span>◆</span><span>BLOPPY FISH</span><span>◆</span><span>ANDROID</span><span>◆</span>
+      <span>ARCADE</span><span>◆</span><span>HECHO POR 3</span><span>◆</span><span>INDIE</span><span>◆</span>
+      <span>TOCKUS GAMES</span><span>◆</span><span>BLOPPY FISH</span><span>◆</span><span>ANDROID</span><span>◆</span>
+      <span>ARCADE</span><span>◆</span><span>HECHO POR 3</span><span>◆</span><span>INDIE</span><span>◆</span>
+    </div>
+  </div>
+
+  <!-- ============ PROCESO ============ -->
+  <section class="section" id="proceso">
+    <div class="wrap">
+      <header class="section__head">
+        <h2 class="section__title" data-reveal>Así trabajamos</h2>
+        <p class="section__sub" data-reveal>Cuatro fases, sin misterio. Lo mismo para un juego propio que para un encargo.</p>
+      </header>
+      <ol class="steps">
+        <li data-reveal><b>01</b><h3>Prototipo</h3><p>Una mecánica, una semana, cero arte. Si no es divertida en gris, no lo será con colores.</p></li>
+        <li data-reveal><b>02</b><h3>Primer nivel real</h3><p>Una pantalla completa con arte, sonido y controles finales. Aquí se decide el tono.</p></li>
+        <li data-reveal><b>03</b><h3>Producción</h3><p>Contenido, herramientas internas y pruebas con gente de fuera del equipo.</p></li>
+        <li data-reveal><b>04</b><h3>Lanzamiento</h3><p>Build, ficha de tienda, actualizaciones y escuchar lo que dicen quienes lo juegan.</p></li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- ============ NOVEDADES ============ -->
+  <section class="section section--alt" id="novedades">
+    <div class="wrap">
+      <header class="section__head">
+        <h2 class="section__title" data-reveal>Novedades</h2>
+        <p class="section__sub" data-reveal>Lo último que hemos tocado.</p>
+      </header>
+
+      <article class="note" data-reveal>
+        <div class="note__side">
+          <span class="note__date">01 OCT 2026</span>
+          <span class="note__tag">Bloppy Fish</span>
+        </div>
+        <div class="note__body">
+          <h3>Efectos visuales</h3>
+          <ul>
+            <li>Contorno dorado pulsante en el pez al llegar al máximo de inflación (5 taps).</li>
+            <li>Contorno celeste pulsante en todas las burbujas.</li>
+          </ul>
+          <a class="link" href="https://play.google.com/store/apps/details?id=com.tockusgames.bloppyfish" target="_blank" rel="noopener">Ver en Google Play ↗</a>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- ============ CONTACTO ============ -->
+  <section class="section" id="contacto">
+    <div class="wrap contact">
+      <div class="contact__copy" data-reveal>
+        <h2 class="section__title">¿Jugamos?</h2>
+        <p>Nos puedes escribir para colaborar, proponernos un proyecto, reportar un bug de
+           Bloppy Fish o simplemente para decir hola.</p>
+        <ul class="social">
+          <li><a href="https://play.google.com/store/apps/details?id=com.tockusgames.bloppyfish" target="_blank" rel="noopener">Google Play</a></li>
+          <li><a href="#">Instagram</a></li>
+          <li><a href="#">YouTube</a></li>
+          <li><a href="mailto:tockusgames@gmail.com">tockusgames@gmail.com</a></li>
+        </ul>
+      </div>
+
+      <form class="form" id="form" novalidate data-reveal>
+        <label>Nombre
+          <input type="text" name="nombre" required placeholder="Cómo te llamas">
+        </label>
+        <label>Email
+          <input type="email" name="email" required placeholder="tu@correo.com">
+        </label>
+        <label>Mensaje
+          <textarea name="mensaje" rows="4" required placeholder="Cuéntanos…"></textarea>
+        </label>
+        <button class="btn btn--primary btn--full" type="submit">Enviar mensaje</button>
+        <p class="form__status" id="formStatus" role="status"></p>
+      </form>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <div class="wrap footer__inner">
+    <img src="assets/img/logo.png" alt="Tockus Games" width="170" height="38">
+    <p>© <span id="year">2026</span> Tockus Games. Hecho por tres, con mucho café.</p>
+    <a class="top" href="#top">▲ Volver arriba</a>
+  </div>
+</footer>
+
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+<script src="assets/js/main.js"></script>
+</body>
+</html>

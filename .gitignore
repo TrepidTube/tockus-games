@@ -1,0 +1,11 @@
+# Config local del editor
+.claude/
+
+# Basura del sistema
+Thumbs.db
+desktop.ini
+.DS_Store
+
+# Originales de arte que la web no usa.
+# Quita esta linea si quieres versionarlos tambien.
+Logo/
