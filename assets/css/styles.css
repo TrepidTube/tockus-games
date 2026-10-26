@@ -359,6 +359,66 @@ h1,h2,h3{ color:var(--cream); line-height:1.15; margin:0; }
 .note__body ul{ margin:0 0 20px; padding-left:20px; }
 .note__body li{ margin-bottom:8px; color:var(--muted); font-size:15.5px; }
 
+/* ---------- soporte ---------- */
+.support{
+  display:grid; grid-template-columns:repeat(auto-fit, minmax(290px,1fr)); gap:24px;
+  margin-bottom:46px;
+}
+.sup{
+  background:var(--ink-2); box-shadow:0 0 0 2px var(--line);
+  padding:28px; display:flex; flex-direction:column; gap:16px;
+  transition:box-shadow .15s;
+}
+.sup:hover{ box-shadow:0 0 0 2px var(--blue-2); }
+.sup h3{ font-family:var(--display); font-size:12px; line-height:1.6; color:var(--orange); }
+.sup p{ margin:0; font-size:15.5px; color:var(--muted); }
+.sup .btn{ margin-top:auto; align-self:flex-start; }
+
+.sup__list{ list-style:none; padding:0; margin:0; display:grid; gap:9px; }
+.sup__list li{
+  position:relative; padding-left:22px; font-size:15px; color:var(--muted);
+}
+.sup__list li::before{
+  content:""; position:absolute; left:0; top:.6em;
+  width:8px; height:8px; background:var(--blue-2);
+}
+
+.sup--mail{ box-shadow:0 0 0 2px var(--orange); }
+.sup--mail:hover{ box-shadow:0 0 0 2px var(--orange-2); }
+.sup__mail{
+  display:inline-block; align-self:flex-start;
+  font-family:var(--display); font-size:11px; color:var(--cream);
+  text-decoration:none; padding:14px 16px; word-break:break-all;
+  box-shadow:inset 0 0 0 2px var(--line); transition:box-shadow .15s, color .15s;
+}
+.sup__mail:hover{ color:var(--orange); box-shadow:inset 0 0 0 2px var(--orange); }
+.sup__time{ margin-top:auto !important; font-size:13.5px !important; color:var(--cyan) !important; }
+
+/* ---------- preguntas frecuentes ---------- */
+.faq__title{ font-family:var(--display); font-size:12px; color:var(--cream); margin-bottom:20px; }
+.faq__item{
+  background:var(--ink-2); box-shadow:0 0 0 2px var(--line);
+  margin-bottom:12px;
+}
+.faq__item summary{
+  cursor:pointer; list-style:none; padding:20px 54px 20px 22px;
+  font-size:16px; color:var(--cream); position:relative;
+}
+.faq__item summary::-webkit-details-marker{ display:none; }
+.faq__item summary::after{
+  content:"+"; position:absolute; right:22px; top:50%; transform:translateY(-50%);
+  font-family:var(--display); font-size:13px; color:var(--orange);
+}
+/* guion normal: la fuente pixel no trae el guion largo */
+.faq__item[open] summary::after{ content:"-"; }
+.faq__item[open] summary{ color:var(--orange); }
+.faq__item summary:hover{ background:var(--panel); }
+.faq__item summary:focus-visible{ outline:2px solid var(--blue-2); outline-offset:-2px; }
+.faq__item p{
+  margin:0; padding:0 22px 22px; font-size:15.5px; color:var(--muted);
+  max-width:72ch;
+}
+
 /* ---------- contacto ---------- */
 .contact{ display:grid; grid-template-columns:1fr 1fr; gap:clamp(30px,5vw,64px); align-items:start; }
 .contact__copy p{ font-size:17.5px; margin:24px 0 30px; max-width:46ch; }
